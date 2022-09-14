@@ -40,5 +40,19 @@ public class PrimitiveToString {
         System.out.println("s12 = " + s12);
         System.out.println("s13 = " + s13);
 
+        int i1 = 5;
+        int i2 = 5;
+
+        String strI1 = "5";
+        String strI2 = "5";
+
+        int intToS = Integer.parseInt(strI1);
+        int intToS2 = Integer.parseInt(strI2);
+
+        System.out.println("1123123213213");
+        System.out.println(String.valueOf(i1)+Integer.toString(i2));
+        System.out.println(intToS+intToS2);
+
+
     }
 }

@@ -15,5 +15,9 @@ public class StringSplitMethod {
         String[] s = str2.split(" ");
         System.out.println(Arrays.toString(s));
 
+        String fullName = "Bahodur Otayev";
+        String[] strSplit = fullName.split(" ");
+        System.out.println(Arrays.toString(strSplit));
+
     }
 }
