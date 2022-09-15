@@ -9,7 +9,7 @@ public class JavaMathSqrt {
      */
     public static void main(String[] args) {
 
-        int num = 14;
+        int num = 16;
         double db = Math.sqrt(num);
         System.out.println("db = " + db);
 
