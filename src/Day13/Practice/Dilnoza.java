@@ -31,6 +31,8 @@ public class Dilnoza {
             System.out.print("Please provide your password, min 8 characters => ");
             String str = scan.nextLine();
 
+
+
             boolean IsPwShort = str.length()<8;
             boolean hasUpperCase = str.replaceAll("[A-Z]","").length()==str.length();
             boolean hasLowerCase =str.replaceAll("[a-z]","").length()== str.length();
@@ -39,7 +41,7 @@ public class Dilnoza {
             String input = "";
 
             input = IsPwShort? "PW is too short"
-                    : hasUpperCase? "PW has no Uppercase Letter"
+                    :hasUpperCase? "PW has no Uppercase Letter"
                     :hasLowerCase? "Pw does not have lower case Letter"
                     :hasSpecialChar? "Has no special character"
                     :"PW is good";

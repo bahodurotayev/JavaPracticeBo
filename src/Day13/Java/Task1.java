@@ -29,19 +29,13 @@ public class Task1 {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
-
         System.out.println("Enter number between 0 - 24 ");
         int time = scan.nextInt();
-
         String output = "";
-
         output = (7 <= time && time <= 20)
                 ? (time <= 12) ? "Good morning" : "Good Day"
                 : (20 < time && time <= 22) ? "Good Evening" : "Good Night";
-
         System.out.println(output);
-
-
 
     }
 }

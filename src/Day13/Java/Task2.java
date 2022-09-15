@@ -1,5 +1,7 @@
 package Day13.Java;
 
+import java.util.Scanner;
+
 public class Task2 {
     public static void main(String[] args) {
        /* Task password checker
@@ -13,5 +15,16 @@ public class Task2 {
         else return "Invalid password"
          */
 
-    }
+        Scanner scan = new Scanner(System.in);
+        String strong = "Strong passcode";
+        String invalid = "Invalid passcode";
+        System.out.print("Enter passcode = ");
+        String passCode = scan.nextLine();
+
+        boolean passCodeMin = passCode.length() > 8;
+        boolean passCodeCapitalLetter = passCode.replaceAll("[A-Z]", "").length() == passCode.length();
+        boolean passCodeLowerCase = passCode.replaceAll("[a-z]", "").length() == passCode.length();
+        boolean passCodeSpecialChar = passCode.replaceAll("[\\p{P}\\p{S}]", "").length() == passCode.length();
+
+//    }
 }
