@@ -20,23 +20,26 @@ public class Task2 {
         String invalid = "Invalid passcode";
         System.out.print("Enter passcode = ");
         String passCode = scan.nextLine();
+        String tryAgain ;
 
         String outPut = "";
 
-        boolean passCodeMin = passCode.length() > 8;
+        boolean passCodeMin = passCode.length() < 8;
         boolean passCodeCapitalLetter = passCode.replaceAll("[A-Z]", "").length() == passCode.length();
         boolean passCodeLowerCase = passCode.replaceAll("[a-z]", "").length() == passCode.length();
         boolean passCodeSpecialChar = passCode.replaceAll("[\\p{P}\\p{S}]", "").length() == passCode.length();
 
         if(passCodeMin){
-            System.out.println("Less than 8");
+            System.out.println(invalid);
         } else if (passCodeCapitalLetter) {
-            System.out.println("Has no capital");
+            System.out.println(invalid);
         } else if (passCodeLowerCase) {
-            System.out.println("Has no lower");
+            System.out.println(invalid);
         } else if (passCodeSpecialChar) {
-            System.out.println("Has no special char");
-        }else
-        System.out.println(strong);
+            System.out.println(invalid);
+        }else {
+            System.out.println(strong);
+        }
+
     }
 }
