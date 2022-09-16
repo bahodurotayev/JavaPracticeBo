@@ -11,15 +11,17 @@ Using loop, count total of each number.
 Example: randomNumber = 6457; result = 6+4+5+7
 */
 
-        Random rnd = new Random();
-        int randomNumber = rnd.nextInt(1000,2000);
-        System.out.println("randomNumber = " + randomNumber);
-        int total = 0;
+//        Random rnd = new Random();
+//        int randomNumber = rnd.nextInt(1000,2000);
+//        System.out.println("randomNumber = " + randomNumber);
+//        int total = 0;
+//
+//        while (randomNumber > 0){
+//            total += randomNumber%10; // total = total + randomNumber%10 6/10 = 0.6
+//            randomNumber /=10;
+//        }
+//        System.out.println("total = " + total);
 
-        while (randomNumber > 0){
-            total += randomNumber%10; // total = total + randomNumber%10 6/10 = 0.6
-            randomNumber /=10;
-        }
-        System.out.println("total = " + total);
+
     }
 }

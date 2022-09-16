@@ -20,7 +20,7 @@ Example: str = Java, result should be = avaJ
 
         while (index >= 0){
             char ch = str.charAt(index);
-            reversedStr += ch;
+            reversedStr = reversedStr + ch;
             index--;
         }
         System.out.println("reversedStr = " + reversedStr);
