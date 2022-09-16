@@ -21,10 +21,22 @@ public class Task2 {
         System.out.print("Enter passcode = ");
         String passCode = scan.nextLine();
 
+        String outPut = "";
+
         boolean passCodeMin = passCode.length() > 8;
         boolean passCodeCapitalLetter = passCode.replaceAll("[A-Z]", "").length() == passCode.length();
         boolean passCodeLowerCase = passCode.replaceAll("[a-z]", "").length() == passCode.length();
         boolean passCodeSpecialChar = passCode.replaceAll("[\\p{P}\\p{S}]", "").length() == passCode.length();
 
-//    }
+        if(passCodeMin){
+            System.out.println("Less than 8");
+        } else if (passCodeCapitalLetter) {
+            System.out.println("Has no capital");
+        } else if (passCodeLowerCase) {
+            System.out.println("Has no lower");
+        } else if (passCodeSpecialChar) {
+            System.out.println("Has no special char");
+        }else
+        System.out.println(strong);
+    }
 }
