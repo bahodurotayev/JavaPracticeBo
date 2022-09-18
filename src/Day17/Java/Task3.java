@@ -10,6 +10,7 @@ public class Task3 {
                 continue;
             }
             toAvoidDuplicates += ch;
+
             String temporary = str.replace(String.valueOf(ch),"");
             System.out.println(""+ch + " = " + (str.length()-temporary.length()));
 
