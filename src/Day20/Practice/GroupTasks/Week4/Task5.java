@@ -19,7 +19,6 @@ public class Task5 {
         Random random=new Random();
         char[] arr1 = new char[random.nextInt(22-2+1)+2];
 
-
         for (char j = 0; j < arr1.length; j++) {
             arr1[j] = (char) ('A' + Math.random()*26);
         }
