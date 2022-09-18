@@ -47,7 +47,7 @@ public class Task1 {
                 if (i == j) {
                     System.out.println("match = " + i + " is the same as " + j);
                     counter += 1;
-                    if (counter == 2 && arrInner[0] != arrInner[1] ) {
+                    if (counter == 2 ) {
                         contains = true;
                     }
                 }
