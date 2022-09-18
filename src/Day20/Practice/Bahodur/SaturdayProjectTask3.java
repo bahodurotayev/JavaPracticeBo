@@ -26,18 +26,19 @@ public class SaturdayProjectTask3 {
         System.out.println("Inner = " + Arrays.toString(inner));
 
         boolean bl = false;
-        for (int i = 0; i <outer.length ; i++) {
-            if (outer[0] == inner[0] || outer[outer.length-1] == inner[inner.length-1]){
+        for (int i = 0; i < outer.length; i++) {
+            if (outer[0] == inner[0] || outer[outer.length - 1] == inner[inner.length - 1]) {
                 bl = true;
                 break;
             }
         }
         System.out.println(bl);
     }
-    int[] FillingRandomNumber(int length){
+
+    int[] FillingRandomNumber(int length) {
         Random random = new Random();
         int[] arr = new int[length];
-        for (int i = 0; i <length; i++) {
+        for (int i = 0; i < length; i++) {
             int randomNumber = random.nextInt(0, 11);
             arr[i] = randomNumber;   // or arr[i] = (int)(Math.random() * 10);
         }
