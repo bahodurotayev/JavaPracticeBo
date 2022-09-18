@@ -9,7 +9,7 @@ public class Task1 {
          *  in a given array of integers {25, 71, 0, 40, 99};
          * */
 
-        int [] iArr = {25, 71, 0, 40, 99};
+        int [] iArr = {25, 71, 32, 40, 99};
         int evenCounter = 0;
 
         for (int i : iArr) {

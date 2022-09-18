@@ -16,8 +16,9 @@ public class Task2 {
         boolean hasMyNumber = false;
 
         for (int i : iArr) {
-            if (i == n){
+            if (i == n) {
                 hasMyNumber = true;
+                break;
             }
         }
 
