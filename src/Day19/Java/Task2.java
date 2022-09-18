@@ -23,6 +23,7 @@ public class Task2 {
         int n = 0;
 
         n = rnd.nextInt(1700, 2500);
+
         boolean hasNumber = false;
         System.out.println("n = " + n);
 
@@ -31,7 +32,7 @@ public class Task2 {
                 hasNumber = true;
             }
         }
-        System.out.println("hasNumber = " + hasNumber);
+       // System.out.println("hasNumber = " + hasNumber);
 
         for (int i = 0; i < my_array1.length; i++) {
 
