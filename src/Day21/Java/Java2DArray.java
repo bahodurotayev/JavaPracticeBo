@@ -2,7 +2,7 @@ package Day21.Java;
 
 import java.util.Arrays;
 
-public class Java2DArray {
+public class  Java2DArray {
     public static void main(String[] args) {
         int row = 2;
         int column = 0;
