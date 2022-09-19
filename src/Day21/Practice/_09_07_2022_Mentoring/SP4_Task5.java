@@ -17,7 +17,7 @@ public class SP4_Task5 {
         char [] chars = new char[rnd.nextInt(2, 23)]; // ((max - min + 1) +min)
 
         for (int i = 0; i < chars.length; i++) {
-            chars[i] = (char) rnd.nextInt(65, 91);
+           // chars[i] = (char) rnd.nextInt(65, 91);
             chars[i] = (char) (rnd.nextInt(26) + 'A'); // 17 + 65
         }
 
