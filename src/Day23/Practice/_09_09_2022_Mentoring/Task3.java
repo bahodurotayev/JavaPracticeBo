@@ -12,4 +12,7 @@ public class Task3 {
 
 hint: return type is int and two parameters number and value n
     * */
+        public static void main(String[] args) {
+
+        }
 }

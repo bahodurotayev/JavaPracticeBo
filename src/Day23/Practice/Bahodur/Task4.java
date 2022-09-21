@@ -1,5 +1,8 @@
 package Day23.Practice.Bahodur;
 
+import java.util.Arrays;
+import java.util.Random;
+
 public class Task4 {
      /*Write a Java program to print an array after changing the rows and columns of a given two-dimensional array.
 
@@ -15,4 +18,33 @@ After changing the rows and columns of the above array:
 {20 50},
 {30 60}}
 */
+     public static void main(String[] args) {
+         Random rnd = new Random();
+         int[][] intArr2D = new int[rnd.nextInt(3, 7)][rnd.nextInt(3, 7)];
+
+         for (int i = 0; i < intArr2D.length ; i++) {
+             for (int j = 0; j < intArr2D[i].length ; j++) {
+                 intArr2D[i][j] = rnd.nextInt(10)*10;
+             }
+         }
+         System.out.println(Arrays.deepToString(intArr2D));
+
+         System.out.println();
+         for (int[] arr: intArr2D) {
+             System.out.println(Arrays.toString(arr));
+         }
+         System.out.println();
+
+         int[][] new2dArr = new int[intArr2D[0].length][intArr2D.length];
+         for (int i = 0; i <intArr2D.length ; i++) {
+             for (int j = 0; j <intArr2D[i].length ; j++) {
+                 new2dArr[j][i] = intArr2D[i][j];
+             }
+         }
+
+         System.out.println();
+         for (int[] arr2: new2dArr) {
+             System.out.println(Arrays.toString(arr2));
+         }
+      }
 }
