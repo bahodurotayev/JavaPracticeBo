@@ -15,6 +15,7 @@ public class Task2 {
 
      */
     public static void main(String[] args) {
+
         ArrayList<ArrayList<String>> listOfLists = new ArrayList<ArrayList<String>>();
 
         ArrayList<String> list1 = new ArrayList<>(Arrays.asList("Monday", "Tuesday", "Wednesday"));

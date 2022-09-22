@@ -24,12 +24,10 @@ public class Task2 {
       ArrayList<ArrayList<String>> listOfString(ArrayList<ArrayList<String>> listOfList){
 
           for (int i = 0; i < listOfList.size(); i++) {
-
               for (int j = 0; j < listOfList.get(i).size(); j++) {
-                  String strToUpperCase = listOfList.get(i).get(j).toUpperCase();
-                  listOfList.get(i).set(j, strToUpperCase);
+                  String s = listOfList.get(i).get(j).toUpperCase();
+                  listOfList.get(i).set(j, s);
               }
-
           }
 
           return listOfList;
