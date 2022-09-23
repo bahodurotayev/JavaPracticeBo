@@ -31,7 +31,7 @@ public class Task3 {
         for (ArrayList<String> eachList:listOfList) {
             for (String eachElement:eachList) {
                 String s = eachElement.substring(0, 1).toUpperCase();
-             // eachList =s.concat(eachElement.substring(1));
+                eachElement =s.concat(eachElement.substring(1));
             }
         }
         return listOfList;
