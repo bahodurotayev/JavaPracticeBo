@@ -13,9 +13,11 @@ public class JavaSet2 {
         ArrayList<String> list =  new ArrayList<>(Arrays.asList("dog", "cat", "mouse", "frog"));
 
         HashSet<String> set2 = new HashSet<>(list);
+        HashSet<String> set3 = new HashSet<>(list);
 
         System.out.println(set);
         System.out.println(set2);
+        System.out.println(set3);
 
 
 

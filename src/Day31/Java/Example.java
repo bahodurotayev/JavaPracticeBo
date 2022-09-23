@@ -12,6 +12,11 @@ public class Example {
         list = new ArrayList<>(set);
         System.out.println(list);
 
+        ArrayList<Integer> list2 = new ArrayList<>(Arrays.asList(1, 2, 3, 2, 4, 6, 3, 12, 5,6, 8, 1, 4, 7));
+        HashSet<Integer> set2 = new HashSet<>(list2);
+        list2 = new ArrayList<>(set2);
+        System.out.println(list2);
+
         // To remove all duplicates from the list, by using hashset
     }
 }

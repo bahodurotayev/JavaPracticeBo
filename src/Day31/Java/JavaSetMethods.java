@@ -12,7 +12,7 @@ public class JavaSetMethods {
 
         System.out.println(set);
 
-        boolean empty = set.isEmpty();
+        boolean empty = !set.isEmpty();
         System.out.println(empty);
 
         boolean contains = set.contains(3);

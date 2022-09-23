@@ -9,7 +9,9 @@ public class JavaRetainAllMethod {
         HashSet<Integer> set2 = new HashSet<>(Arrays.asList(1,2,4,5,6,7));
 
         set1.retainAll(set2);
+        set2.retainAll(set1);
         System.out.println(set1);
+        System.out.println(set2);
 
     }
 }

@@ -49,6 +49,9 @@ public class JavaCollectionMethods {
         Collections.fill(list, 10); // sets the objects in the list. List must have some objects inside.
         System.out.println(list);
 
+        Collections.reverse(list3);
+        System.out.println("list3 = " + list3);
+
     }
 
 }
