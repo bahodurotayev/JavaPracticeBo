@@ -1,4 +1,4 @@
-package day31.Practice.Bahodur;
+package Day31.Practice.Bahodur;
 
 import java.util.ArrayList;
 import java.util.Arrays;
