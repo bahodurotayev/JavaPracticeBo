@@ -1,8 +1,7 @@
-package day31.Bahodur;
+package day31.Practice.Bahodur;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 
 public class Task1 {
