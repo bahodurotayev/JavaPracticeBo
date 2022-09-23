@@ -15,15 +15,24 @@ public class Task4 {
     wordCount(["c", "b", "a"]) → {"a": 1, "b": 1, "c": 1}
     wordCount(["c", "c", "c", "c"]) → {"c": 4}*/
 
-        ArrayList<String> list = new ArrayList<>(Arrays.asList("a", "b", "a", "c", "b"));
-
+        Task4 t4 = new Task4();
+        ArrayList<String> list = new ArrayList<>(Arrays.asList("a", "b", "a", "c", "b", "a", "a", "a"));
+       // String[] list = {"a", "b", "a", "c", "b"};
+        System.out.println(t4.wordCount(list));
     }
     HashMap<String, Integer> wordCount(ArrayList<String> list){
 
-        HashMap<String, Integer>getWordCount = new HashMap<>();
+        HashMap<String, Integer> getWordCount = new HashMap<>();
 
+        for (String eachElement: list) {
+            Integer counter = getWordCount.get(eachElement);
 
-
+            if(counter == null){
+                getWordCount.put(eachElement, 1);
+            }else{
+                getWordCount.put(eachElement, counter + 1);
+            }
+        }
         return getWordCount;
     }
 

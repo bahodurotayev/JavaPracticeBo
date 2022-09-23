@@ -1,4 +1,4 @@
-package Day33.Bahodur.Practice;
+package Day33.Practice.Bahodur;
 
 import java.util.HashMap;
 
