@@ -11,7 +11,6 @@ public class Furkat {
 
         2. Create a method which will return a HashMap.
            Parameter will be int[].
-
            Return how many times each int of array repeats.
 
            Example:
