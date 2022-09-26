@@ -1,9 +1,6 @@
 package Day34.Practice.Bahodur;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Scanner;
+import java.util.*;
 
 public class Task5 {
     /* Task 5
@@ -25,19 +22,34 @@ public class Task5 {
            If Student doesn`t exist, return "Wrong number"*/
 
 
-/*    static String provideName(HashMap<String, String> map)*//*{
+    static String provideName(HashMap<String, String> map){
 
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter name please : ");
         String name = scan.nextLine();
         System.out.println();
-        for (int i = 0; i < map.size(); i++) {
-            //if(name.equalsIgnoreCase(map.keySet())){
-                System.out.println(name + " and his phone number is : " + map.get(i));
+        Set<String> set = map.keySet();
+        for (String each: set) {
+            if(name.equalsIgnoreCase(each)){
+                return name + " phone number is :" + map.get(name);
             }
-        }*//*
+        }
         return "Does not exist";
-    }*/
+    }
+    static String provideName2(HashMap<String, String> map){
+
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter name please : ");
+        String name = scan.nextLine();
+        System.out.println();
+        for (Map.Entry<String, String> eachName: map.entrySet()) {
+            if(name.equalsIgnoreCase(eachName.getKey())){
+                return name + " phone number is :" + map.get(name);
+            }
+        }
+        return "Does not exist";
+    }
+
     static HashMap<String, String>phoneBook(ArrayList<String> name, ArrayList<String> number ){
         HashMap<String, String> phoneBook = new HashMap<>();
 
@@ -55,7 +67,9 @@ public class Task5 {
                 "(434) 494-4764", "(229) 230-5207", "(463) 612-2498", "(388) 829-6837", "(832) 305-6110", "(445) 553-6905", "(490) 849-4996"));
 
         HashMap<String, String> phoneBook = phoneBook(names, numbers);
-        System.out.println(phoneBook);
+        //System.out.println(provideName(phoneBook));
+        System.out.println(provideName2(phoneBook));
+
 
         System.out.println();
     }
