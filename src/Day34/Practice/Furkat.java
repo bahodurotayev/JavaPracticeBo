@@ -113,7 +113,6 @@ public class Furkat {
            {"a": true, "b": true, "c": false}
 
     Task 9
-
           Given a HashMap<String, String>.
           The map has keys and values as follow:
           {"spinach": "dirt", "ice cream": "cherry"}
