@@ -62,7 +62,6 @@ public class Furkat {
           Result = false;
 
      Task 5
-
         Given two ArrayList<String>
         the data of the lists are as below:
         {Andrea, Bahridin, Anthony, Arthur, Ufuk, Sebahattin, Dilnoza, Tohir, Besime, Malika, Mustafa, Ibrahim, Mehmet Ali}
