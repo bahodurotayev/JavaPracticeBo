@@ -12,12 +12,9 @@ public class Task4 {
         2. Create a method which will return true or false.
            Parameter is ArrayList<Integer>, and int (X).
            Determine whether there exist two elements in the list whose sum is exactly X.
-
           Example:
-
           {1, 4, 45, 6, 10, 8} and X = 16
           Result = true;
-
           {1, 2, 4, 3, 6} and X = 11
           Result = false;*/
 
