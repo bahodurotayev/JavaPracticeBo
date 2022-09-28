@@ -11,6 +11,7 @@ public class Furkat {
 
         2. Create a method which will return a HashMap.
            Parameter will be int[].
+
            Return how many times each int of array repeats.
 
            Example:
@@ -62,9 +63,10 @@ public class Furkat {
           Result = false;
 
      Task 5
+
         Given two ArrayList<String>
         the data of the lists are as below:
-        {Andrea, Bahridin, Anthony, Arthur, Ufuk, Sebahattin, Dilnoza, Tohir, Besime, Malika, Mustafa, Ibrahim, Mehmet Ali}
+        {Andrea, Bahridin, Anthony, Arthur, Ufuk, Sebahattin, Dilnoza, Tohir, Besime, Day34.Practice.Malika, Mustafa, Ibrahim, Mehmet Ali}
         {(570) 899-6329, (885) 553-4829, (677) 374-5873, (513) 224-9164, (958) 338-2735, (398) 619-7665, (434) 494-4764, (229) 230-5207, (463) 612-2498, (388) 829-6837, (832) 305-6110, (445) 553-6905, (490) 849-4996}
 
         1. Create a method which will have parameter as two ArrayList<String>`s
@@ -113,6 +115,7 @@ public class Furkat {
            {"a": true, "b": true, "c": false}
 
     Task 9
+
           Given a HashMap<String, String>.
           The map has keys and values as follow:
           {"spinach": "dirt", "ice cream": "cherry"}
