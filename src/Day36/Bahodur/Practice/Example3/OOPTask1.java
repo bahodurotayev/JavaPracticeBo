@@ -5,7 +5,14 @@ import java.util.Random;
 public class OOPTask1 {
     public static void main(String[] args) {
 
-        Student newStudent = new Student();
+        Student student = new Student();
+
+        School newSchool = new School();
+        newSchool.schoolAddress = "123 lincoln st";
+        newSchool.schoolName = "PS 205";
+        newSchool.schoolTuition = 2500;
+        newSchool.web = "ps205.gov.NY";
+        newSchool.schoolEmail = "ps205@lincoln.com";
 
         Info newInfo = new Info();
         newInfo.name = "John";
@@ -15,15 +22,16 @@ public class OOPTask1 {
         newInfo.email = "johnwick@gmail.com";
         newInfo.address = "123 york st";
 
-        School newSchool = new School();
-        newSchool.schoolAddress = "123 lincoln st";
-        newSchool.schoolName = "PS 205";
-        newSchool.schoolTuition = 2500;
-        newSchool.web = "ps205.gov.NY";
-        newSchool.schoolEmail = "ps205@lincoln.com";
+        student.info = newInfo;
+        student.school = newSchool;
 
-        newStudent.school = newSchool;
-        newStudent.info = newInfo;
+        System.out.println(student.info.name + " " + student.info.lastName);
+
+        Student student2 = new Student();
+        student2.info.name = "Ron";
+        student2.info.lastName = "Wesley";
+
+        System.out.println(student2.info.name);
 
 
         }
@@ -46,6 +54,7 @@ class School {
     String web;
 }
 class Student{
-    Info info = new Info();
+
+    Info info = new Info() ;
     School school = new School();
 }
