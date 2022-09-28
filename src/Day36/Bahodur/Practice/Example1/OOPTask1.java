@@ -20,7 +20,9 @@ public class OOPTask1 {
         student1.lastName = lastName;
 
         return student1;
-    }static Student creatingStudentInfo(String name, String lastName, int age, String phone, String gender){
+    }
+
+    static Student creatingStudentInfo(String name, String lastName, int age, String phone, String gender){
         Student student1 =new Student();
         student1.name = name;
         student1.lastName = lastName;
