@@ -88,5 +88,6 @@ public class Shop {
 
         System.out.println(consumer.balanceDue);
 
+
     }
 }
