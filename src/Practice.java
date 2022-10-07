@@ -3,8 +3,15 @@ public class Practice {
 
 
       //  System.out.println(createVarargs("10", "asd", "10"));
-        int count = (countString("baha", "baha", "baha", "baha"));
-        System.out.println(count);
+        /*int count = (countString("baha", "baha", "baha", "baha"));
+        System.out.println(count);*/
+
+
+        String[] str = {"baho", "daho", "taho"};
+
+        for (String eachName:str) {
+            System.out.println(eachName.substring(0, 1).toUpperCase().concat(eachName.substring(1)));
+        }
 
     }
    static double returnToDouble(String str){
