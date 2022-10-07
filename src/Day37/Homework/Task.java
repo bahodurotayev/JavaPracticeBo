@@ -8,10 +8,12 @@ public class Task {
 
     public static void main(String[] args) {
         Company company = populateCompany("Sun Corp.", "www.suncorp.com", 43);
+
         Employee employee = populateEmployee("Fred Flinstone", 38277, company);
         Employee employee3 = populateEmployee("Jacki Chan", 38250, company);
         Employee employee4 = populateEmployee("Mark Twan", 38250456, company);
         Employee employee5 = populateEmployee("Mike Bedford", 345657, company);
+
 //        printAllInfo(employee);
 //        printAllInfo(employee3);
 //        printAllInfo(employee4);

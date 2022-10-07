@@ -20,10 +20,12 @@ public class ExampleWithFinalAttributes {
 
         list.add(10);
         list.remove(0);
+        list.add(12);
         System.out.println(list);
 
         map.put(1,1);
         map.put(2,20);
+        map.put(3,210);
         System.out.println(map);
 
         ExampleWithFinalAttributes obj = new ExampleWithFinalAttributes();

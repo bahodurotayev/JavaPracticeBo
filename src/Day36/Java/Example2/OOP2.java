@@ -5,10 +5,14 @@ public class OOP2 {
     public static void main(String[] args) {
         Student student = createStudent("Bahodur", "Otayev");
         printStudentName(student);
+
         System.out.println("==================");
+
         createStudent(student, 2546, "bahodur.otaev@gmail.com", 38 );
         print(student);
+
         System.out.println("===================");
+
         Student student2 = createStudent("Bahridin", "Hojaev", 16594, "bahriddin@gmail.com", 40);
         print(student2);
     }
