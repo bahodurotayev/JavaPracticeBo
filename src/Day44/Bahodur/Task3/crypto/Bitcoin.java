@@ -13,7 +13,7 @@ public class Bitcoin {
     public Bitcoin(double transactionAmount) {
         this.transactionAmount = transactionAmount;
         this.transactionValue = this.transactionAmount * price;
-        totalAmount += transactionAmount;
+        totalAmount += this.transactionAmount;
         totalValue += transactionValue;
     }
 

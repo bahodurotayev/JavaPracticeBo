@@ -16,7 +16,21 @@ public class BuyCrypto {
 
     public BuyCrypto(String crypto, double amount) {
         transactionId ++;
-        if(crypto.equals("bitcoin")){
+        switch (crypto){
+            case "bitcoin":
+                Bitcoin bitcoin = new Bitcoin(amount);
+                bitcoin.transactionId = transactionId;
+                bitcoinTransactionList.add(bitcoin);
+                portfolio.put(Bitcoin.shortName, new ArrayList<>(Arrays.asList(Bitcoin.getTotalAmount(), Bitcoin.getTotalValue())));
+                break;
+
+            case "ethereum":
+                Ethereum ethereum = new Ethereum(amount);
+                ethereum.transactionId = transactionId;
+                ethereumTransactionList.add(ethereum);
+                portfolio.put(Ethereum.shortName, new ArrayList<>(Arrays.asList(Bitcoin.getTotalAmount(), Bitcoin.getTotalValue())));
+        }
+       /* if(crypto.equals("bitcoin")){
             Bitcoin bitcoin = new Bitcoin(amount);
             bitcoin.transactionId = transactionId;
             bitcoinTransactionList.add(bitcoin);
@@ -26,7 +40,7 @@ public class BuyCrypto {
             ethereum.transactionId = transactionId;
             ethereumTransactionList.add(ethereum);
             portfolio.put(Ethereum.shortName, new ArrayList<>(Arrays.asList(Bitcoin.getTotalAmount(), Bitcoin.getTotalValue())));
-        }
+        }*/
     }
     public static void printTransactionDetails(){
         System.out.println("====================Transactions====================");
