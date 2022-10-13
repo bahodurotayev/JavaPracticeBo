@@ -7,6 +7,7 @@ public class Cart {
     final static List<BuyDrink> cart = new ArrayList<>();
     static double balanceDue;
 
+
     public static double calculateBalanceDue(){
         for (int i = 0; i < cart.size(); i++) {
             balanceDue += cart.get(i).totalPrice;
