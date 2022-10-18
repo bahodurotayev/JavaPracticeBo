@@ -1,5 +1,7 @@
 package Day50.Bahodur;
 
+import java.util.Scanner;
+
 public class Task1 {
     /*  Task2:
         Create a random password generator.
@@ -11,17 +13,53 @@ public class Task1 {
         Example: Qe4$Os5!De1$Oe3&*/
     public static void main(String[] args) {
 
-    }
-    public static boolean passwordSize(String passWord){
-        if(passWord.length() >= 16){
-            return true;
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter your passCode -> ");
+
+
+        Boolean isStrongPassWord = true;
+        while (isStrongPassWord) {
+            try {
+                String passWord = scan.nextLine();
+                passwordSize(passWord);
+                passwordWith4Capitals(passWord);
+                passwordWith4lowerLetter(passWord);
+                passwordWith4Numbers(passWord);
+                passwordWith4SpecialChar(passWord);
+                System.out.println("you have strong password!!! ");
+            } catch (Exception e) {
+                System.out.println("Please try strong password");
+            }
         }
-        return false;
     }
-    public static boolean passwordWith4Capitals(String passWord){
-        if(passWord.length() <= 16){
-            return true;
+    public static boolean passwordSize(String passWord) throws Exception {
+        if(passWord.length() < 15){
+            throw new Exception("Password should be minimum 16 characters");
         }
-        return false;
+        return true;
+    }
+    public static boolean passwordWith4Capitals(String passWord) throws Exception {
+        if(passWord.replace("[^A-Z]", "").length() < 3){
+            throw new Exception("Password should be minimum 16 characters");
+        }
+        return true;
+    }
+    public static boolean passwordWith4lowerLetter(String passWord) throws Exception {
+        if(passWord.replace("[^a-z]", "").length() < 3){
+            throw new Exception("Password should be minimum 16 characters");
+        }
+        return true;
+    }
+    public static boolean passwordWith4Numbers(String passWord) throws Exception {
+        if(passWord.replace("[0-9]", "").length() < 3){
+            throw new Exception("Password should be minimum 16 characters");
+        }
+        return true;
+    }
+    public static boolean passwordWith4SpecialChar(String passWord) throws Exception {
+        if(passWord.replace("^a-zA-Z0-9]", "").length() < 3){
+            throw new Exception("Password should be minimum 16 characters");
+        }
+        return true;
     }
 }
