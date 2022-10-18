@@ -40,25 +40,25 @@ public class Task1 {
     }
     public static boolean passwordWith4Capitals(String passWord) throws Exception {
         if(passWord.replace("[^A-Z]", "").length() < 3){
-            throw new Exception("Password should be minimum 16 characters");
+            throw new Exception("Password has less Capital letter characters");
         }
         return true;
     }
     public static boolean passwordWith4lowerLetter(String passWord) throws Exception {
         if(passWord.replace("[^a-z]", "").length() < 3){
-            throw new Exception("Password should be minimum 16 characters");
+            throw new Exception("Password has less lower letter ");
         }
         return true;
     }
     public static boolean passwordWith4Numbers(String passWord) throws Exception {
         if(passWord.replace("[0-9]", "").length() < 3){
-            throw new Exception("Password should be minimum 16 characters");
+            throw new Exception("Password has less numeric numbers");
         }
         return true;
     }
     public static boolean passwordWith4SpecialChar(String passWord) throws Exception {
         if(passWord.replace("^a-zA-Z0-9]", "").length() < 3){
-            throw new Exception("Password should be minimum 16 characters");
+            throw new Exception("Password has less special character");
         }
         return true;
     }

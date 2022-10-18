@@ -16,36 +16,34 @@ public class BoTask2 {
 
         Example: Qe4$Os5!De1$Oe3&
           */
-
-//        Random rnd = new Random();
-//
-//        String pwd = "";
-//        String capitals = "ABCDEFGHIJKLMNOPRSTUWXYZ";
-//        String lowerCase = "abcdefghijklmnoprstuwxyz";
-//        String specialChars = "!#$%&()*+,-.:;<=>?@[]^_{|}~";
-//
-//        while (pwd.length()< 16){
-//            pwd += capitals.charAt(rnd.nextInt(capitals.length()));
-//            pwd += lowerCase.charAt(rnd.nextInt(lowerCase.length()));
-//            pwd += specialChars.charAt(rnd.nextInt(specialChars.length()));
-//            pwd += rnd.nextInt(10);
-//        }
-//        System.out.println(pwd);
-
-        Scanner scan = new Scanner(System.in);
-        System.out.print("Enter passCode = ");
-        String passCode = scan.nextLine();
-        System.out.println();
-
-        int capitalCount = passCode.replaceAll("[A-Z]", "").length();
-        int lowerCount = passCode.replaceAll("[^a-z]", "").length();
-        int numbCount = passCode.replaceAll("[0-9]", "").length();
-        int specialCount = passCode.replaceAll("[\\p{P}\\p{S}]", "").length();
-
-        if(passCode.length() >= 16 && capitalCount >= 4 && lowerCount >= 4 && numbCount >= 4 && specialCount >= 4){
-            System.out.println("Strong Password");
-        }else{
-            System.out.println("Invalid Password");
+        String strongPassWord2 = createStrongPassWord2();
+        System.out.println(strongPassWord2);
+    }
+public static String randomStrongPassWord(String passWord){
+        Random rnd = new Random();
+        String lowerLetter = "abcdefghijklmnoprstuwxyz";
+        String capitalLetters = "ABCDEFGHIJKLMNOPRSTUWXYZ";
+        String specialChar = "!#$%&()*+,-.:;<=>?@[]^_{|}~";
+        while (passWord.length() < 16){
+            passWord += lowerLetter.charAt(rnd.nextInt(lowerLetter.length()));
+            passWord += capitalLetters.charAt(rnd.nextInt(capitalLetters.length()));
+            passWord += specialChar.charAt(rnd.nextInt(specialChar.length()));
+            passWord += rnd.nextInt(10);
         }
+        return passWord;
+    }
+    public static String createStrongPassWord2(){
+       Scanner scanner = new Scanner(System.in);
+       String passWord = scanner.nextLine();
+
+        int capitalCount = passWord.replaceAll("[A-Z]", "").length();
+        int lowerLetterCount = passWord.replaceAll("[a-z]", "").length();
+        int numericCount = passWord.replaceAll("[0-9]", "").length();
+        int specialCount = passWord.replaceAll("[\\\\p{P}\\\\p{S}]", "").length();
+
+        if(capitalCount >= 4 && lowerLetterCount >= 4 && numericCount >= 4 && specialCount >= 4){
+            return "Strong Password !!!";
+        }
+        return "Not strong password try again ";
     }
 }
