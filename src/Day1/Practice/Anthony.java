@@ -2,7 +2,7 @@ package Day1.Practice;
 
 public class Anthony {
     public static void main(String[] args) {
-        //Practice Escape Characters
+        //_01Prac.Practice Escape Characters
         //System.out.println("\"Hello World\"");
         //System.out.println("Anthony \nHermann");
         //System.out.println("\\Disney\\\t\\Land\\");

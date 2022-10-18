@@ -1,3 +1,5 @@
+package _01Prac;
+
 public class Practice {
     public static void main(String[] args) {
 
