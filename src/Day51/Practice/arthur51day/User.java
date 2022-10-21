@@ -1,14 +1,17 @@
-package Week10.Task2;
+package Day49.SaturdayHmwk.Task2;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 
 public class User {
-    public String name;
-    public LocalDateTime registration;
+   String name;
+   LocalDateTime registration;
+
 
     public User(String name) {
         this.name = name;
-        this.registration = LocalDateTime.now();
+        registration = LocalDateTime.now();
     }
 
     @Override
