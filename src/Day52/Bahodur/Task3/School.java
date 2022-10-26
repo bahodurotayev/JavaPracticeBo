@@ -1,5 +1,6 @@
 package Day52.Bahodur.Task3;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class School {
@@ -8,9 +9,10 @@ public class School {
     private String email;
     private String address;
     private int schoolSize;
-    private List<Student> studentList;
+    private ArrayList<Student> studentList;
 
     public School() {
+        studentList = new ArrayList<>();
     }
 
     public String getName() {
@@ -57,11 +59,11 @@ public class School {
         return studentList;
     }
 
-    public void register(List<Student> studentList) {
-        if (schoolSize > 10){
+    public void register(Student student) {
+        if (studentList.size() + 1> schoolSize){
             throw new RuntimeException("You exceeded limit no more student");
         }
-        System.out.println("Registered Successfully");
+        this.studentList.add(student);
     }
 
     @Override
