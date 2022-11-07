@@ -4,10 +4,8 @@ import java.util.Arrays;
 
 public class prax2 {
     static int[] startEndPosition(int[] arr, int target){
-        int[] result = {-1, -1};
+        int[] result = new int[2];
 
-        if (arr == null || arr.length == 0)
-            return result;
 
         result[0] = findTheStartIndex(arr, target);
         result[1] = findTheEndIndex(arr, target);
