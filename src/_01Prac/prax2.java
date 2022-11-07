@@ -57,7 +57,7 @@ public class prax2 {
         return end;
     }
     public static void main(String[] args) {
-        int[] arr = {5, 8, 7, 8, 8, 5};
+        int[] arr = {5, 7, 7, 8, 8,8, 8, 8, 8,  5};
         int[] ints = startEndPosition(arr, 8);
         System.out.println(Arrays.toString(ints));
     }
